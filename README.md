@@ -20,3 +20,18 @@ This Python script reads a GDS file and generates a hierarchical tree of the cel
 
    ```bash
    git clone https://github.com/cowboywyo/gdshierarchy.git
+
+
+## Usage
+
+Run the script with the following command-line arguments:
+
+- **gds**: Path to the GDS file.
+- **--top**: The name of the top-level cell in the GDS file.
+- **--depth**: (Optional) The maximum number of hierarchy levels to display (default is 5).
+
+### Example
+
+```bash
+python parse_gds_hierarchy.py my_design.gds --top TopCell --depth 4
+
